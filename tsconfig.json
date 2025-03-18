@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@tsconfig/node22/tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2022",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "preserveSymlinks": true,
+    "declaration": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "strictPropertyInitialization": false,
+    "allowJs": true,
+    "incremental": true,
+    "skipLibCheck": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "rootDirs": ["src", "test"],
+    "types": ["jest", "node"],
+    "resolveJsonModule": true
+  }
+}
