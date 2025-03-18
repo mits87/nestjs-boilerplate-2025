@@ -1,0 +1,15 @@
+services:
+  app:
+    container_name: nest-app
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        GH_NPM_TOKEN: ${GH_NPM_TOKEN} # Secure token if needed
+    env_file:
+      - .env
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
